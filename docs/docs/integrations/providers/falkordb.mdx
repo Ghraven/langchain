@@ -24,3 +24,29 @@ See a [usage example](/docs/integrations/graphs/falkordb).
 ```python
 from langchain_community.chains.graph_qa.falkordb import FalkorDBQAChain
 ```
+
+## VectorStore
+
+The FalkorDB vector index is used as a vectorstore,
+whether for semantic search or example selection.
+
+```python
+from langchain_community.vectorstores.falkordb_vector import FalkorDBVector
+```
+or 
+
+```python
+from langchain_falkordb.vectorstore import FalkorDBVector
+```
+
+See a [usage example](/docs/integrations/vectorstores/falkordbvector.ipynb)
+
+## Memory
+
+See a [usage example](/docs/integrations/memory/falkordb_chat_message_history.ipynb).
+
+```python
+from langchain_falkordb.message_history import (
+    FalkorDBChatMessageHistory,
+)
+```
